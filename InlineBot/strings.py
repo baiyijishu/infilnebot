@@ -1,6 +1,3 @@
-# Copyright (C) @CodeXBotz - All Rights Reserved
-# Licensed under GNU General Public License as published by the Free Software Foundation
-# Written by Shahsad Kolathur <shahsadkpklr@gmail.com>, June 2021
 
 from pyrogram import __version__
 from InlineBot import (
@@ -13,38 +10,38 @@ from InlineBot import (
 if CUSTOM_START_MESSAGE:
     START_MESSAGE = CUSTOM_START_MESSAGE
 else:
-    START_MESSAGE = """<b>Hello {mention},
+    START_MESSAGE = """<b>您好 {mention}爸爸,
 
-I am an Inline Saver Bot, you can save inline filters and It can be use in any of your chats easily, Click help for more details</b> 
+我是您的数据筛选机器人</b> 
 """
 
-HELP_MESSAGE = f"""<b><u>Main Available Commands</u></b>
+HELP_MESSAGE = f"""<b><u>命令列表</u></b>
 
 ○ <b>/{FILTER_COMMAND.lower()}</b> <i>[keyword] [message or reply to message]</i>
-    <i>Add an Inline filter, you can use MarkDown for formatting</i>
+    <i>添加 Inline 过滤器，可以使用 MarkDown 进行格式化</i>
     
 ○ <b>/{DELETE_COMMAND.lower()}</b> <i>[keyword]</i>
-    <i>Delete existing Filter</i>
+    <i>删除现有过滤器</i>
     
 ○ <b>/filters</b>
-    <i>To see the filters</i>
+    <i>查看过滤器</i>
     
 ○ <b>/export</b>
-    <i>Export a Backup file of filters, this can be import by others</i>
+    <i>导出过滤器的备份文件，这可以由其他人导入</i>
     
 ○ <b>/stats</b>
-    <i>See the Bot's Statistics</i>
+    <i>查看机器人的统计数据</i>
     
 ○ <b>/broadcast</b> <i>[reply to any message]</i>
-    <i>Broadcast any Messages to Bot users</i>
+    <i>向所有用户通知任何消息</i>
     
-<b><u>Owner only Commands</u></b>
+<b><u>仅所有者命令</u></b>
 
 ○ <b>/delall</b>
-    <i>Delete all of the filters</i>
+    <i>删除所有数据</i>
     
 ○ <b>/import</b> <i>[reply to an exported file]</i>
-    <i>Import filters from Backup file</i>
+    <i>从备份文件导入数据库</i>
 """
 
 ABOUT_MESSAGE = f"""<b><u>ABOUT ME</u></b>
@@ -61,38 +58,38 @@ MARKDOWN_HELP = """<b><u>Markdown Formatting</u></b>
 
 ○ <b>Bold Words</b> :
     format: <code>*Bold Text*</code>
-    show as: <b>Bold Text</b>
+    show as: <b>粗体</b>
     
 ○ <b>Italic Text</b>
     format: <code>_Italic Text_</code>
-    show as: <i>Italic Text</i>
+    show as: <i>斜体</i>
     
 ○ <b>Code Words</b>
     format: <code>`Code Text`</code>
-    show as: <code>Code Text</code>
+    show as: <code>代码</code>
     
 ○ <b>Under Line</b>
     format: <code>__UnderLine Text__</code>
-    show as: <u>UnderLine Text</u>
+    show as: <u>下划线</u>
     
 ○ <b>StrikeThrough</b>
     format: <code>~StrikeThrough Text~</code>
-    show as: <s>StrikeThrough Text</s>
+    show as: <s>删除线</s>
     
 ○ <b>Hyper Link</b>
-    format: <code>[Text](https://t.me/CodeXBotz)</code>
-    show as: <a href='https://t.me/CodeXBotz'>Text</a>
+    format: <code>[Text](https://t.me/ffpphh)</code>
+    show as: <a href='https://t.me/ffpphh'>Text</a>
     
 ○ <b>Buttons</b>
     <u>Url Button</u>:
-    <code>[Button Text](buttonurl:https://t.me/CoddeXBotz)</code>
+    <code>[Button Text](buttonurl:https://t.me/ffpphh)</code>
     <u>Alert Button</u>:
-    <code>[Button Text](buttonalert:Alert Text)</code>
+    <code>[Button Text](buttonalert:重要事项)</code>
     <u>In Sameline</u>:
-    <code>[Button Text](buttonurl:https://t.me/CodeXBotz:same)</code></i>
+    <code>[Button Text](buttonurl:https://t.me/ffpphh:same)</code></i>
 
 ○ <b>Notes:</b>
-    <i>Keep every Buttons in Seperate line when formating</i>
-    <i>Your alert message text must be less than 200 characters, otherwise bot will ignore that button</i>
+    <i>格式化时将每个按钮保持在同行</i>
+    <i>您的提醒消息文本必须少于 200 个字符，否则机器人将忽略该按钮</i>
 
-○ <b>Tip:</b> <i>You can add buttons for sticker and video note in /add command</i>"""
+○ <b>提示：</b> <i>您可以在/+命令中添加贴纸和视频笔记按钮</i>"""
